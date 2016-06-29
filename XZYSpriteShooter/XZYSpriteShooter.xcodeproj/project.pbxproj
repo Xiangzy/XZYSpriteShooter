@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		730EFC621BEC3EA10026E782 /* XZYEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 730EFC611BEC3EA10026E782 /* XZYEnemyNode.m */; };
+		730EFC661BEC44290026E782 /* XZYBulletNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 730EFC651BEC44290026E782 /* XZYBulletNode.m */; };
+		730EFC691BEC506B0026E782 /* SKNode+XZYExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 730EFC681BEC506B0026E782 /* SKNode+XZYExtra.m */; };
+		730EFC701BEC91E40026E782 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 730EFC6E1BEC91E40026E782 /* spark.png */; };
+		730EFC711BEC91E40026E782 /* MissileExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 730EFC6F1BEC91E40026E782 /* MissileExplosion.sks */; };
+		730EFC771BEC93F00026E782 /* XZYGameOver-Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 730EFC761BEC93F00026E782 /* XZYGameOver-Scene.m */; };
+		730EFC7A1BEC974D0026E782 /* XZYStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 730EFC791BEC974D0026E782 /* XZYStartScene.m */; };
+		7395D5251BEB4663003A0E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7395D5241BEB4663003A0E2B /* main.m */; };
+		7395D5281BEB4663003A0E2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7395D5271BEB4663003A0E2B /* AppDelegate.m */; };
+		7395D52B1BEB4663003A0E2B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7395D52A1BEB4663003A0E2B /* GameScene.m */; };
+		7395D52D1BEB4663003A0E2B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7395D52C1BEB4663003A0E2B /* GameScene.sks */; };
+		7395D5301BEB4663003A0E2B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7395D52F1BEB4663003A0E2B /* GameViewController.m */; };
+		7395D5331BEB4663003A0E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7395D5311BEB4663003A0E2B /* Main.storyboard */; };
+		7395D5351BEB4663003A0E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7395D5341BEB4663003A0E2B /* Assets.xcassets */; };
+		7395D5381BEB4663003A0E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7395D5361BEB4663003A0E2B /* LaunchScreen.storyboard */; };
+		7395D5431BEB4663003A0E2B /* XZYSpriteShooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7395D5421BEB4663003A0E2B /* XZYSpriteShooterTests.m */; };
+		7395D54E1BEB4663003A0E2B /* XZYSpriteShooterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7395D54D1BEB4663003A0E2B /* XZYSpriteShooterUITests.m */; };
+		7395D55D1BEB514F003A0E2B /* XZYPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7395D55C1BEB514F003A0E2B /* XZYPlayerNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7395D53F1BEB4663003A0E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7395D5181BEB4663003A0E2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7395D51F1BEB4663003A0E2B;
+			remoteInfo = XZYSpriteShooter;
+		};
+		7395D54A1BEB4663003A0E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7395D5181BEB4663003A0E2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7395D51F1BEB4663003A0E2B;
+			remoteInfo = XZYSpriteShooter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		730EFC601BEC3EA10026E782 /* XZYEnemyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZYEnemyNode.h; path = Nodes/XZYEnemyNode.h; sourceTree = "<group>"; };
+		730EFC611BEC3EA10026E782 /* XZYEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZYEnemyNode.m; path = Nodes/XZYEnemyNode.m; sourceTree = "<group>"; };
+		730EFC631BEC436E0026E782 /* XZYPhysicsCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XZYPhysicsCategories.h; path = Nodes/XZYPhysicsCategories.h; sourceTree = "<group>"; };
+		730EFC641BEC44290026E782 /* XZYBulletNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZYBulletNode.h; path = Nodes/XZYBulletNode.h; sourceTree = "<group>"; };
+		730EFC651BEC44290026E782 /* XZYBulletNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZYBulletNode.m; path = Nodes/XZYBulletNode.m; sourceTree = "<group>"; };
+		730EFC671BEC506B0026E782 /* SKNode+XZYExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKNode+XZYExtra.h"; path = "Nodes/SKNode+XZYExtra.h"; sourceTree = "<group>"; };
+		730EFC681BEC506B0026E782 /* SKNode+XZYExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKNode+XZYExtra.m"; path = "Nodes/SKNode+XZYExtra.m"; sourceTree = "<group>"; };
+		730EFC6E1BEC91E40026E782 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		730EFC6F1BEC91E40026E782 /* MissileExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MissileExplosion.sks; sourceTree = "<group>"; };
+		730EFC751BEC93F00026E782 /* XZYGameOver-Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XZYGameOver-Scene.h"; path = "Nodes/XZYGameOver-Scene.h"; sourceTree = "<group>"; };
+		730EFC761BEC93F00026E782 /* XZYGameOver-Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XZYGameOver-Scene.m"; path = "Nodes/XZYGameOver-Scene.m"; sourceTree = "<group>"; };
+		730EFC781BEC974D0026E782 /* XZYStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZYStartScene.h; path = Nodes/XZYStartScene.h; sourceTree = "<group>"; };
+		730EFC791BEC974D0026E782 /* XZYStartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZYStartScene.m; path = Nodes/XZYStartScene.m; sourceTree = "<group>"; };
+		7395D5201BEB4663003A0E2B /* XZYSpriteShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZYSpriteShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7395D5241BEB4663003A0E2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7395D5261BEB4663003A0E2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7395D5271BEB4663003A0E2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7395D5291BEB4663003A0E2B /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		7395D52A1BEB4663003A0E2B /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		7395D52C1BEB4663003A0E2B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		7395D52E1BEB4663003A0E2B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		7395D52F1BEB4663003A0E2B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		7395D5321BEB4663003A0E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7395D5341BEB4663003A0E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7395D5371BEB4663003A0E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7395D5391BEB4663003A0E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7395D53E1BEB4663003A0E2B /* XZYSpriteShooterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZYSpriteShooterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7395D5421BEB4663003A0E2B /* XZYSpriteShooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZYSpriteShooterTests.m; sourceTree = "<group>"; };
+		7395D5441BEB4663003A0E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7395D5491BEB4663003A0E2B /* XZYSpriteShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZYSpriteShooterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7395D54D1BEB4663003A0E2B /* XZYSpriteShooterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZYSpriteShooterUITests.m; sourceTree = "<group>"; };
+		7395D54F1BEB4663003A0E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7395D55B1BEB514F003A0E2B /* XZYPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZYPlayerNode.h; path = Nodes/XZYPlayerNode.h; sourceTree = "<group>"; };
+		7395D55C1BEB514F003A0E2B /* XZYPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZYPlayerNode.m; path = Nodes/XZYPlayerNode.m; sourceTree = "<group>"; };
+		7395D55F1BEB5665003A0E2B /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Header.h; path = Nodes/Header.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7395D51D1BEB4663003A0E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395D53B1BEB4663003A0E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395D5461BEB4663003A0E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7395D5171BEB4663003A0E2B = {
+			isa = PBXGroup;
+			children = (
+				7395D5221BEB4663003A0E2B /* XZYSpriteShooter */,
+				7395D5411BEB4663003A0E2B /* XZYSpriteShooterTests */,
+				7395D54C1BEB4663003A0E2B /* XZYSpriteShooterUITests */,
+				7395D5211BEB4663003A0E2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7395D5211BEB4663003A0E2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7395D5201BEB4663003A0E2B /* XZYSpriteShooter.app */,
+				7395D53E1BEB4663003A0E2B /* XZYSpriteShooterTests.xctest */,
+				7395D5491BEB4663003A0E2B /* XZYSpriteShooterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7395D5221BEB4663003A0E2B /* XZYSpriteShooter */ = {
+			isa = PBXGroup;
+			children = (
+				730EFC6E1BEC91E40026E782 /* spark.png */,
+				730EFC6F1BEC91E40026E782 /* MissileExplosion.sks */,
+				7395D55E1BEB5157003A0E2B /* Tools */,
+				7395D5261BEB4663003A0E2B /* AppDelegate.h */,
+				7395D5271BEB4663003A0E2B /* AppDelegate.m */,
+				7395D5291BEB4663003A0E2B /* GameScene.h */,
+				7395D52A1BEB4663003A0E2B /* GameScene.m */,
+				7395D52C1BEB4663003A0E2B /* GameScene.sks */,
+				7395D52E1BEB4663003A0E2B /* GameViewController.h */,
+				7395D52F1BEB4663003A0E2B /* GameViewController.m */,
+				7395D5311BEB4663003A0E2B /* Main.storyboard */,
+				7395D5341BEB4663003A0E2B /* Assets.xcassets */,
+				7395D5361BEB4663003A0E2B /* LaunchScreen.storyboard */,
+				7395D5391BEB4663003A0E2B /* Info.plist */,
+				7395D5231BEB4663003A0E2B /* Supporting Files */,
+			);
+			path = XZYSpriteShooter;
+			sourceTree = "<group>";
+		};
+		7395D5231BEB4663003A0E2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7395D5241BEB4663003A0E2B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7395D5411BEB4663003A0E2B /* XZYSpriteShooterTests */ = {
+			isa = PBXGroup;
+			children = (
+				7395D5421BEB4663003A0E2B /* XZYSpriteShooterTests.m */,
+				7395D5441BEB4663003A0E2B /* Info.plist */,
+			);
+			path = XZYSpriteShooterTests;
+			sourceTree = "<group>";
+		};
+		7395D54C1BEB4663003A0E2B /* XZYSpriteShooterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7395D54D1BEB4663003A0E2B /* XZYSpriteShooterUITests.m */,
+				7395D54F1BEB4663003A0E2B /* Info.plist */,
+			);
+			path = XZYSpriteShooterUITests;
+			sourceTree = "<group>";
+		};
+		7395D55E1BEB5157003A0E2B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7395D55B1BEB514F003A0E2B /* XZYPlayerNode.h */,
+				7395D55C1BEB514F003A0E2B /* XZYPlayerNode.m */,
+				7395D55F1BEB5665003A0E2B /* Header.h */,
+				730EFC601BEC3EA10026E782 /* XZYEnemyNode.h */,
+				730EFC611BEC3EA10026E782 /* XZYEnemyNode.m */,
+				730EFC631BEC436E0026E782 /* XZYPhysicsCategories.h */,
+				730EFC641BEC44290026E782 /* XZYBulletNode.h */,
+				730EFC651BEC44290026E782 /* XZYBulletNode.m */,
+				730EFC671BEC506B0026E782 /* SKNode+XZYExtra.h */,
+				730EFC681BEC506B0026E782 /* SKNode+XZYExtra.m */,
+				730EFC751BEC93F00026E782 /* XZYGameOver-Scene.h */,
+				730EFC761BEC93F00026E782 /* XZYGameOver-Scene.m */,
+				730EFC781BEC974D0026E782 /* XZYStartScene.h */,
+				730EFC791BEC974D0026E782 /* XZYStartScene.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7395D51F1BEB4663003A0E2B /* XZYSpriteShooter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7395D5521BEB4663003A0E2B /* Build configuration list for PBXNativeTarget "XZYSpriteShooter" */;
+			buildPhases = (
+				7395D51C1BEB4663003A0E2B /* Sources */,
+				7395D51D1BEB4663003A0E2B /* Frameworks */,
+				7395D51E1BEB4663003A0E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XZYSpriteShooter;
+			productName = XZYSpriteShooter;
+			productReference = 7395D5201BEB4663003A0E2B /* XZYSpriteShooter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7395D53D1BEB4663003A0E2B /* XZYSpriteShooterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7395D5551BEB4663003A0E2B /* Build configuration list for PBXNativeTarget "XZYSpriteShooterTests" */;
+			buildPhases = (
+				7395D53A1BEB4663003A0E2B /* Sources */,
+				7395D53B1BEB4663003A0E2B /* Frameworks */,
+				7395D53C1BEB4663003A0E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7395D5401BEB4663003A0E2B /* PBXTargetDependency */,
+			);
+			name = XZYSpriteShooterTests;
+			productName = XZYSpriteShooterTests;
+			productReference = 7395D53E1BEB4663003A0E2B /* XZYSpriteShooterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7395D5481BEB4663003A0E2B /* XZYSpriteShooterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7395D5581BEB4663003A0E2B /* Build configuration list for PBXNativeTarget "XZYSpriteShooterUITests" */;
+			buildPhases = (
+				7395D5451BEB4663003A0E2B /* Sources */,
+				7395D5461BEB4663003A0E2B /* Frameworks */,
+				7395D5471BEB4663003A0E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7395D54B1BEB4663003A0E2B /* PBXTargetDependency */,
+			);
+			name = XZYSpriteShooterUITests;
+			productName = XZYSpriteShooterUITests;
+			productReference = 7395D5491BEB4663003A0E2B /* XZYSpriteShooterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7395D5181BEB4663003A0E2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XZY;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Senbakeji;
+				TargetAttributes = {
+					7395D51F1BEB4663003A0E2B = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					7395D53D1BEB4663003A0E2B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7395D51F1BEB4663003A0E2B;
+					};
+					7395D5481BEB4663003A0E2B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7395D51F1BEB4663003A0E2B;
+					};
+				};
+			};
+			buildConfigurationList = 7395D51B1BEB4663003A0E2B /* Build configuration list for PBXProject "XZYSpriteShooter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7395D5171BEB4663003A0E2B;
+			productRefGroup = 7395D5211BEB4663003A0E2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7395D51F1BEB4663003A0E2B /* XZYSpriteShooter */,
+				7395D53D1BEB4663003A0E2B /* XZYSpriteShooterTests */,
+				7395D5481BEB4663003A0E2B /* XZYSpriteShooterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7395D51E1BEB4663003A0E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730EFC711BEC91E40026E782 /* MissileExplosion.sks in Resources */,
+				730EFC701BEC91E40026E782 /* spark.png in Resources */,
+				7395D52D1BEB4663003A0E2B /* GameScene.sks in Resources */,
+				7395D5381BEB4663003A0E2B /* LaunchScreen.storyboard in Resources */,
+				7395D5351BEB4663003A0E2B /* Assets.xcassets in Resources */,
+				7395D5331BEB4663003A0E2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395D53C1BEB4663003A0E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395D5471BEB4663003A0E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7395D51C1BEB4663003A0E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7395D5301BEB4663003A0E2B /* GameViewController.m in Sources */,
+				730EFC7A1BEC974D0026E782 /* XZYStartScene.m in Sources */,
+				7395D5281BEB4663003A0E2B /* AppDelegate.m in Sources */,
+				730EFC691BEC506B0026E782 /* SKNode+XZYExtra.m in Sources */,
+				7395D55D1BEB514F003A0E2B /* XZYPlayerNode.m in Sources */,
+				7395D52B1BEB4663003A0E2B /* GameScene.m in Sources */,
+				730EFC621BEC3EA10026E782 /* XZYEnemyNode.m in Sources */,
+				7395D5251BEB4663003A0E2B /* main.m in Sources */,
+				730EFC771BEC93F00026E782 /* XZYGameOver-Scene.m in Sources */,
+				730EFC661BEC44290026E782 /* XZYBulletNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395D53A1BEB4663003A0E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7395D5431BEB4663003A0E2B /* XZYSpriteShooterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395D5451BEB4663003A0E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7395D54E1BEB4663003A0E2B /* XZYSpriteShooterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7395D5401BEB4663003A0E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7395D51F1BEB4663003A0E2B /* XZYSpriteShooter */;
+			targetProxy = 7395D53F1BEB4663003A0E2B /* PBXContainerItemProxy */;
+		};
+		7395D54B1BEB4663003A0E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7395D51F1BEB4663003A0E2B /* XZYSpriteShooter */;
+			targetProxy = 7395D54A1BEB4663003A0E2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7395D5311BEB4663003A0E2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7395D5321BEB4663003A0E2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7395D5361BEB4663003A0E2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7395D5371BEB4663003A0E2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7395D5501BEB4663003A0E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7395D5511BEB4663003A0E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7395D5531BEB4663003A0E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XZYSpriteShooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanSenbaba.XZYSpriteShooter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7395D5541BEB4663003A0E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XZYSpriteShooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanSenbaba.XZYSpriteShooter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7395D5561BEB4663003A0E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = XZYSpriteShooterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanSenbaba.XZYSpriteShooterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZYSpriteShooter.app/XZYSpriteShooter";
+			};
+			name = Debug;
+		};
+		7395D5571BEB4663003A0E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XZYSpriteShooterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanSenbaba.XZYSpriteShooterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZYSpriteShooter.app/XZYSpriteShooter";
+			};
+			name = Release;
+		};
+		7395D5591BEB4663003A0E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = XZYSpriteShooterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanSenbaba.XZYSpriteShooterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XZYSpriteShooter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7395D55A1BEB4663003A0E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XZYSpriteShooterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanSenbaba.XZYSpriteShooterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XZYSpriteShooter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7395D51B1BEB4663003A0E2B /* Build configuration list for PBXProject "XZYSpriteShooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7395D5501BEB4663003A0E2B /* Debug */,
+				7395D5511BEB4663003A0E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7395D5521BEB4663003A0E2B /* Build configuration list for PBXNativeTarget "XZYSpriteShooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7395D5531BEB4663003A0E2B /* Debug */,
+				7395D5541BEB4663003A0E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7395D5551BEB4663003A0E2B /* Build configuration list for PBXNativeTarget "XZYSpriteShooterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7395D5561BEB4663003A0E2B /* Debug */,
+				7395D5571BEB4663003A0E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7395D5581BEB4663003A0E2B /* Build configuration list for PBXNativeTarget "XZYSpriteShooterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7395D5591BEB4663003A0E2B /* Debug */,
+				7395D55A1BEB4663003A0E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7395D5181BEB4663003A0E2B /* Project object */;
+}
